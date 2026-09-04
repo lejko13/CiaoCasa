@@ -138,12 +138,14 @@ export default function FooterMain() {
         </div>
       </div>
 
-      {/* Veľký brand nápis */}
+      {/* Veľké logo */}
       <div className="px-6 md:px-12 lg:px-20 pb-8 pt-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] font-display font-bold text-white/90 leading-[0.9] tracking-tight truncate">
-            {siteInfo.nazovWebu}
-          </div>
+          <img
+            src="/images/logo.png"
+            alt={siteInfo.nazovWebu}
+            className="h-16 sm:h-24 md:h-28 lg:h-32 w-auto object-contain opacity-90"
+          />
         </div>
       </div>
     </footer>
