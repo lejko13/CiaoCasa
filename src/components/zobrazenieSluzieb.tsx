@@ -20,6 +20,7 @@ export default function ZobrazenieSluzieb({TypSlubzy} : Props) {
     popis={item.Popis}
     fotka={item.Obrazok}
     slug={item.slug}
+    comingSoon={item.comingSoon}
   />
 
 

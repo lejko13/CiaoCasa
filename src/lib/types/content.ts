@@ -34,6 +34,8 @@ export type SluzbaItem = {
   // Používa sa v adrese /sluzby/<slug> – musí byť unikátny a bez diakritiky/medzier.
   slug?: string;
   link?: string;
+  // Ak true, v kartách/riadkoch služby sa zobrazí štítok "Čoskoro" (služba sa ešte nespúšťa naplno).
+  comingSoon?: boolean;
 };
 
 export type HeaderItem = {

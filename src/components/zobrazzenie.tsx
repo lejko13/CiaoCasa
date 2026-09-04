@@ -7,8 +7,6 @@ import { POPIS_FIRMY } from "@/data/i18n/siteInfo";
 export default function FooterMain() {
   const { t, locale } = useLocale();
   const rok = new Date().getFullYear();
-  const iniciala = siteInfo.nazovWebu.trim().charAt(0).toUpperCase() || "?";
-
   // Odkazy na služby vedú na svoje stránky /sluzby/<slug> a preberajú názov
   // priamo z data/sluzby.ts (nič sa tu neduplikuje). "Pre firmy" a "O nás" už
   // majú vlastné podstránky.
@@ -30,10 +28,11 @@ export default function FooterMain() {
             {/* O firme */}
             <div className="sm:col-span-2 md:col-span-1 flex flex-col gap-4">
               <div className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-white text-[var(--cierna)] text-xs font-medium flex items-center justify-center shrink-0">
-                  {iniciala}
-                </span>
-                <span className="text-base font-medium">{siteInfo.nazovWebu}</span>
+                <img
+                  src="/images/logo.png"
+                  alt={siteInfo.nazovWebu}
+                  className="h-8 w-auto object-contain"
+                />
               </div>
 
               <p className="text-sm text-white/60 leading-relaxed max-w-xs">
@@ -43,8 +42,12 @@ export default function FooterMain() {
 
               <p className="text-xs text-white/40 leading-relaxed">
                 {t.footer.icoLabel}: {siteInfo.ico}
-                <br />
-                {t.footer.dicLabel}: {siteInfo.dic}
+                {siteInfo.dic && (
+                  <>
+                    <br />
+                    {t.footer.dicLabel}: {siteInfo.dic}
+                  </>
+                )}
               </p>
             </div>
 

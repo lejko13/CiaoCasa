@@ -10,6 +10,7 @@ import type { Locale } from "./locales";
 export type UiSlovnik = {
   spolocne: {
     domov: string;
+    coskoro: string;
   };
   header: {
     kontaktovat: string;
@@ -106,7 +107,7 @@ export type UiSlovnik = {
 
 export const UI: Record<Locale, UiSlovnik> = {
   sk: {
-    spolocne: { domov: "Domov" },
+    spolocne: { domov: "Domov", coskoro: "Čoskoro" },
     header: {
       kontaktovat: "Kontaktovať",
       sluzby: "Služby",
@@ -194,7 +195,7 @@ export const UI: Record<Locale, UiSlovnik> = {
     jazykovaLista: { text: "Táto stránka je dostupná aj v ďalších jazykoch." },
   },
   en: {
-    spolocne: { domov: "Home" },
+    spolocne: { domov: "Home", coskoro: "Coming soon" },
     header: {
       kontaktovat: "Contact us",
       sluzby: "Services",
@@ -282,7 +283,7 @@ export const UI: Record<Locale, UiSlovnik> = {
     jazykovaLista: { text: "This website is also available in other languages." },
   },
   it: {
-    spolocne: { domov: "Home" },
+    spolocne: { domov: "Home", coskoro: "Prossimamente" },
     header: {
       kontaktovat: "Contattaci",
       sluzby: "Servizi",

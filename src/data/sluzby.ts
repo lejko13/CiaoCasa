@@ -95,6 +95,7 @@ export const sluzby: SluzbaItem[] = [
     _id: "sluzba-3",
     Nazov: "Výstavba",
     slug: "vystavba",
+    comingSoon: true,
     Popis:
       "Kompletnú realizáciu stavby zastrešíme od základov až po strechu.",
     PopisDlhy:

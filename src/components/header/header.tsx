@@ -23,6 +23,7 @@ type Sluzba = {
   Nazov: string;
  Obrazok: ObrazokTyp,
  slug?: string,
+ comingSoon?: boolean,
 
 };
 
@@ -165,7 +166,9 @@ useEffect(() => {
 <Link
   to="/"
  onClick={() => window.scrollTo({ top: 0 })}
-className='w-fit h-full flex items-center justify-center font-medium text-[17px]'>{nazovWebu}</Link>
+className='w-fit h-full flex items-center justify-center'>
+  <img src="/images/logo.png" alt={nazovWebu} className="h-[28px] w-auto object-contain" />
+</Link>
 
 <div
 
@@ -211,7 +214,7 @@ className='w-fit h-full flex gap-4 items-center ' >
          }}
         className='w-full  overflow-hidden flex gap-6'>
        {informacia?.map((polozka,i) => {
-  return   <Link key={i} to={polozka.slug ? `/sluzby/${polozka.slug}` : "/"} className="w-full block">
+  const karta = (
   <KartaTyp
   NazovOdboru = {polozka.Nazov}
   fotka = {polozka.Obrazok}
@@ -219,7 +222,18 @@ className='w-fit h-full flex gap-4 items-center ' >
   onMouseEnter={() => setPriblizujem(polozka.Nazov )}
   priblizujem = {priblizujem === polozka.Nazov }
   textdlhy = {polozka.Popis}
+  comingSoon = {polozka.comingSoon}
   ></KartaTyp>
+  );
+
+  // Služby označené ako "čoskoro" ešte nemajú vlastnú stránku pripravenú
+  // na zverejnenie – karta sa len zobrazí, ale nedá sa na ňu kliknúť.
+  if (polozka.comingSoon) {
+    return <div key={i} className="w-full block">{karta}</div>;
+  }
+
+  return <Link key={i} to={polozka.slug ? `/sluzby/${polozka.slug}` : "/"} className="w-full block">
+  {karta}
   </Link>
 
 })}
@@ -269,7 +283,7 @@ rounded-[var(--radius)]
 
         flex justify-between items-center
         w-full lg:hidden'>
-                 <div>{nazovWebu}</div>
+                 <img src="/images/logo.png" alt={nazovWebu} className="h-7 w-auto object-contain" />
 
                  <div
                  ref = {referencia}

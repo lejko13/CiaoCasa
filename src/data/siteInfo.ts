@@ -16,8 +16,9 @@ export const siteInfo = {
   ico: "57292621",
   // DIČ nie je vo verejných registroch k dispozícii (firma pravdepodobne
   // nie je platcom DPH, prípadne DIČ ešte nebolo pridelené/zverejnené) –
-  // doplň podľa osvedčenia o registrácii z daňového úradu.
-  dic: "— doplniť",
+  // doplň podľa osvedčenia o registrácii z daňového úradu. Kým je prázdne,
+  // riadok "DIČ" sa v pätičke vôbec nezobrazuje (pozri zobrazzenie.tsx).
+  dic: "",
   adresaSK: "Estónska 2 (8. poschodie), 821 06 Bratislava",
   adresaCZ: "",
   telefon: "+421 904 530 619",
