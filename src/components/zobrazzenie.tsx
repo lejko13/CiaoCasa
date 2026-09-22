@@ -39,16 +39,6 @@ export default function FooterMain() {
                 {POPIS_FIRMY[locale]}
                 {siteInfo.rokVzniku ? ` ${t.footer.posobimeOdRoku} ${siteInfo.rokVzniku}.` : ""}
               </p>
-
-              <p className="text-xs text-white/40 leading-relaxed">
-                {t.footer.icoLabel}: {siteInfo.ico}
-                {siteInfo.dic && (
-                  <>
-                    <br />
-                    {t.footer.dicLabel}: {siteInfo.dic}
-                  </>
-                )}
-              </p>
             </div>
 
             {/* Navigácia */}
@@ -89,6 +79,15 @@ export default function FooterMain() {
                   {siteInfo.telefon}
                 </a>
                 <p className="text-white/70 leading-relaxed">{siteInfo.adresaSK}</p>
+                <p className="text-white/40 text-xs leading-relaxed mt-1">
+                  {t.footer.icoLabel}: {siteInfo.ico}
+                  {siteInfo.dic && (
+                    <>
+                      <br />
+                      {t.footer.dicLabel}: {siteInfo.dic}
+                    </>
+                  )}
+                </p>
               </div>
             </div>
 

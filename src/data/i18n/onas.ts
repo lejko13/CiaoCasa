@@ -22,15 +22,17 @@ export type ObsahONas = {
 };
 
 const sk: ObsahONas = {
-  meno: "[Vaše meno]",
+  meno: "Timothy Smon",
   rola: "Zakladateľ, " + "CiaoCasa",
   nadpis: "O mne",
   uvod:
-    "Som človek, ktorý stojí za každým projektom od prvého náčrtu až po odovzdanie kľúčov – bez veľkého tímu, ale o to osobnejšie a zodpovednejšie.",
+    "Interiér pre mňa nie je len o tom, ako dobre vyzerá. Je o pocite, ktorý vo vás priestor vyvolá, o detailoch a hlavne o tom, aby vám dával zmysel.",
   pribehNadpis: "Môj príbeh",
   pribeh: [
-    "[Sem doplň pár viet o tom, ako si sa dostal k architektúre a stavaniu, koľko rokov v odbore pôsobíš a čo ťa na tejto práci baví najviac.]",
-    "[Tu môžeš doplniť konkrétny príklad projektu alebo skúsenosti, ktorá najlepšie vystihuje tvoj prístup ku klientom.]",
+    "Každý projekt začínam od vás – od vášho životného štýlu, vkusu a predstavy o tom, ako chcete svoj priestor využívať. Mojou úlohou je tieto predstavy pochopiť, doplniť ich o vlastný pohľad a vytvoriť interiér, ktorý bude nadčasový, osobitý a hlavne váš.",
+    "ciao Casa nie je o jednom konkrétnom štýle. Každý interiér má svoj vlastný charakter, preto ku každému projektu pristupujem individuálne a hľadám riešenia, ktoré fungujú vizuálne aj v každodennom živote.",
+    "Od prvého návrhu až po realizáciu dohliadam na dôležité detaily a spolupracujem s overenými dodávateľmi, ktorým dôverujem.",
+    "Pre mňa je dobrý interiér taký, ktorý nepotrebuje vysvetľovať, prečo je dobrý. Jednoducho sa v ňom cítite dobre.",
   ],
   hodnotyNadpis: "Ako pracujem",
   hodnoty: [
@@ -53,7 +55,7 @@ const sk: ObsahONas = {
 };
 
 const en: ObsahONas = {
-  meno: "[Your name]",
+  meno: "Timothy Smon",
   rola: "Founder, CiaoCasa",
   nadpis: "About me",
   uvod:
@@ -84,7 +86,7 @@ const en: ObsahONas = {
 };
 
 const it: ObsahONas = {
-  meno: "[Il tuo nome]",
+  meno: "Timothy Smon",
   rola: "Fondatore, CiaoCasa",
   nadpis: "Chi sono",
   uvod:

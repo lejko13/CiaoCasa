@@ -2,9 +2,9 @@ import type { Statistika, SekciaText, OtazkaItem } from "@/lib/types/content";
 
 // Hlavný nadpis a podnadpis v hero sekcii domovskej stránky.
 export const heroText = {
-  UvodnyText: "Navrhneme a postavíme váš vysnívaný dom",
+  UvodnyText: "Tvorím priestory, v ktorých sa dobre žije.",
   NizzsieText:
-    "Od prvého náčrtu až po odovzdanie kľúčov – všetko pod jednou strechou. Tvoríme nadčasovo, s citom pre detail a dôrazom na kvalitu.",
+    "Interiér pre mňa nie je len o tom, ako dobre vyzerá. Je o pocite, ktorý vo vás priestor vyvolá, o detailoch a hlavne o tom, aby vám dával zmysel.",
 };
 
 // Poznámka: fotky v hero swiperi na pozadí (posunobrazok.tsx) sa preberajú
