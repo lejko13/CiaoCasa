@@ -13,9 +13,9 @@ export const heroText = {
 
 // Štatistiky pod hero textom.
 export const statistiky: Statistika[] = [
-  { cislo: 300, popis: "Úspešne zrealizovaných projektov na Slovensku a v Česku.", specialnyZnak: "+" },
-  { cislo: 21, popis: "Odborníkov z rôznych profesií spojených pod jednou strechou.", specialnyZnak: "+" },
-  { cislo: 2018, popis: "Rok, odkedy pomáhame klientom premeniť vízie na realitu." },
+  { cislo: 47, popis: "Úspešne zrealizovaných projektov na Slovensku a v Česku.", specialnyZnak: "+" },
+  { cislo: 3, popis: "Odborníkov z rôznych profesií spojených pod jednou strechou.", specialnyZnak: "+" },
+  { cislo: 2022, popis: "Rok, odkedy pomáhame klientom premeniť vízie na realitu." },
   { cislo: 100, popis: "Transparentnosť v komunikácii, rozpočte aj termínoch.", specialnyZnak: "%" },
 ];
 

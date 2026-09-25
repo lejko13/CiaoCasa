@@ -33,9 +33,9 @@ const en: ObsahDomovskej = {
       "From the first sketch to handing over the keys – everything under one roof. We create timeless spaces with an eye for detail and a focus on quality.",
   },
   statistiky: [
-    { cislo: 300, popis: "Successfully completed projects in Slovakia and Czechia.", specialnyZnak: "+" },
-    { cislo: 21, popis: "Specialists from different fields, united under one roof.", specialnyZnak: "+" },
-    { cislo: 2018, popis: "The year we started helping clients turn visions into reality." },
+    { cislo: 47, popis: "Successfully completed projects in Slovakia and Czechia.", specialnyZnak: "+" },
+    { cislo: 3, popis: "Specialists from different fields, united under one roof.", specialnyZnak: "+" },
+    { cislo: 2022, popis: "The year we started helping clients turn visions into reality." },
     { cislo: 100, popis: "Transparency in communication, budget and deadlines.", specialnyZnak: "%" },
   ],
   projektySekciaText: {
@@ -90,9 +90,9 @@ const it: ObsahDomovskej = {
       "Dal primo schizzo alla consegna delle chiavi – tutto sotto lo stesso tetto. Creiamo spazi senza tempo, curati nei dettagli e con attenzione alla qualità.",
   },
   statistiky: [
-    { cislo: 300, popis: "Progetti realizzati con successo in Slovacchia e Repubblica Ceca.", specialnyZnak: "+" },
-    { cislo: 21, popis: "Specialisti di diverse professioni, uniti sotto lo stesso tetto.", specialnyZnak: "+" },
-    { cislo: 2018, popis: "L'anno in cui abbiamo iniziato ad aiutare i clienti a realizzare le loro visioni." },
+    { cislo: 47, popis: "Progetti realizzati con successo in Slovacchia e Repubblica Ceca.", specialnyZnak: "+" },
+    { cislo: 3, popis: "Specialisti di diverse professioni, uniti sotto lo stesso tetto.", specialnyZnak: "+" },
+    { cislo: 2022, popis: "L'anno in cui abbiamo iniziato ad aiutare i clienti a realizzare le loro visioni." },
     { cislo: 100, popis: "Trasparenza nella comunicazione, nel budget e nelle scadenze.", specialnyZnak: "%" },
   ],
   projektySekciaText: {
